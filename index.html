@@ -18,7 +18,34 @@ textarea{width:100%;min-height:105px;padding:13px;resize:vertical;line-height:1.
 header .wrap{position:relative;padding-right:150px}.journal-bird{position:absolute;right:0;top:-8px;width:125px;height:125px;object-fit:contain;mix-blend-mode:multiply;opacity:.9;filter:sepia(.12) contrast(1.05)}.theme-toggle{position:absolute;right:0;bottom:-58px;z-index:5;border:1px solid var(--line);background:var(--paper);color:var(--green);padding:9px 12px;font:700 12px system-ui,sans-serif;cursor:pointer;box-shadow:2px 2px 0 var(--shadow)}.decor-sprig{position:absolute;left:-22px;bottom:-43px;font-size:35px;color:var(--sage);transform:rotate(-18deg);opacity:.7}.field-stamp{display:inline-block;margin-left:10px;padding:3px 7px;border:1px solid var(--ochre);color:var(--brown);font:700 9px system-ui,sans-serif;letter-spacing:.12em;transform:rotate(1.5deg)}
 body.dark{--cream:#20251f;--paper:#292f28;--paper2:#35372d;--ink:#ece5d4;--green:#a9c6a5;--sage:#899d7c;--olive:#b3b578;--blue:#829fa3;--sky:#9db8bb;--ochre:#d0a45e;--brown:#c4ad88;--muted:#bbb8aa;--line:#5d6255;--shadow:rgba(0,0,0,.28);background-color:#20251f;background-image:radial-gradient(rgba(235,226,204,.035) .8px,transparent .8px)}
 body.dark header{background:#292f28;color:#dce7d8}body.dark .bird,body.dark .card,body.dark .details,body.dark .idealrow{background:#292f28}body.dark .seen{background:#313a2f}body.dark .filters{background:#35372d}body.dark .search,body.dark .filters select,body.dark textarea{background-color:#252a24;color:#eee7d6;border-color:#6f735f}body.dark textarea{background-image:repeating-linear-gradient(transparent,transparent 27px,rgba(157,184,187,.14) 28px)}body.dark .category,body.dark .chip{background:#384637;color:#c9dec5;border-color:#596c56}body.dark .tab{background:#39382f;color:#e9e0cd}body.dark .tab.active{background:#9ab795;color:#1d261e}body.dark .journal-bird{filter:sepia(.25) brightness(.82) contrast(1.12)}
-@media(max-width:620px){header .wrap{padding-right:85px}.journal-bird{width:78px;height:78px;top:8px}.theme-toggle{bottom:-58px}.decor-sprig{display:none}}</style></head><body>
+@media(max-width:620px){header .wrap{padding-right:85px}.journal-bird{width:78px;height:78px;top:8px}.theme-toggle{bottom:-58px}.decor-sprig{display:none}}.desktop-marginalia{display:none}
+@media(min-width:1280px){
+  .desktop-marginalia{display:block;position:absolute;inset:0;pointer-events:none;overflow:hidden;z-index:0}
+  body{position:relative}
+  header,main{position:relative;z-index:2}
+  .margin-art{position:absolute;mix-blend-mode:multiply;opacity:.38;filter:sepia(.18) saturate(.78);object-fit:contain}
+  .margin-art.left-one{left:8px;top:260px;width:150px;transform:rotate(-5deg)}
+  .margin-art.left-two{left:22px;top:850px;width:125px;transform:rotate(4deg);opacity:.29}
+  .margin-art.right-one{right:4px;top:360px;width:170px;transform:rotate(5deg)}
+  .margin-art.right-two{right:24px;top:980px;width:130px;transform:rotate(-4deg);opacity:.3}
+  .margin-caption{position:absolute;font:italic 10px Georgia,serif;color:var(--brown);letter-spacing:.03em;opacity:.65}
+  .margin-caption.ml{left:25px;top:430px;transform:rotate(-5deg)}
+  .margin-caption.mr{right:24px;top:555px;transform:rotate(5deg)}
+  body.dark .margin-art{mix-blend-mode:screen;opacity:.18;filter:sepia(.25) grayscale(.12)}
+  body.dark .margin-caption{opacity:.45}
+}
+@media(min-width:1500px){
+ .margin-art.left-one{left:45px;width:190px}.margin-art.left-two{left:70px;width:155px}
+ .margin-art.right-one{right:35px;width:205px}.margin-art.right-two{right:75px;width:160px}
+ .margin-caption.ml{left:65px}.margin-caption.mr{right:65px}
+}</style></head><body><aside class="desktop-marginalia" aria-hidden="true">
+<img class="margin-art left-one" src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Cedar%20Bird%20%28Audubon%29.jpg" alt="">
+<div class="margin-caption ml">ornithological study · field plate</div>
+<img class="margin-art left-two" src="https://commons.wikimedia.org/wiki/Special:Redirect/file/John%20James%20Audubon%20Brown-Headed%20Nuthatch%20print.jpg" alt="">
+<img class="margin-art right-one" src="https://commons.wikimedia.org/wiki/Special:Redirect/file/The%20Birds%20of%20America%20from%20Drawings%20Made%20in%20the%20United%20States%20MET%20DP247651.jpg" alt="">
+<div class="margin-caption mr">natural history · specimen notes</div>
+<img class="margin-art right-two" src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Illustration%20from%20Birds%20of%20America%20%281827%29%20by%20John%20James%20Audubon%2C%20digitally%20enhanced%20by%20rawpixel-com%20431.jpg" alt="">
+</aside>
 <header><div class="wrap"><h1>Salt River · Tempe Town Lake</h1><div class="sub">Personal bird checklist & photo log</div><div class="stats">✓ 7 species collected · Started November 8, 2026</div><span class="field-stamp">FIELD LOG 001</span><span class="decor-sprig" aria-hidden="true">⌇❧</span><button id="themeToggle" class="theme-toggle" type="button" aria-label="Switch color theme">☾ Dark journal</button><img class="journal-bird" src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Heron%20Illustration.jpg" alt="" aria-hidden="true"></div></header>
 <main class="wrap"><div class="tabs"><button class="tab active" data-tab="check">Checklist</button><button class="tab" data-tab="collection">My Collection · 7</button><button class="tab" data-tab="ideal">Ideal Sightings</button></div>
 <section id="check" class="panel active"><input id="search" class="search" placeholder="Search birds…"><div id="list"></div></section>

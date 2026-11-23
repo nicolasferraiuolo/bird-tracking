@@ -81,7 +81,30 @@ body.dark header{background:#292f28;color:#dce7d8}body.dark .bird,body.dark .car
 }
 @media(min-width:1450px){
  .x1,.x3,.x5,.x7,.x9{left:210px}.x2,.x4,.x6,.x8,.x10{right:210px}
-}</style></head><body><aside class="desktop-marginalia" aria-hidden="true">
+}
+@media(min-width:1280px){
+ .desktop-marginalia>.margin-art,.desktop-marginalia>.margin-caption,.desktop-marginalia>.scrap,.desktop-marginalia>.scrap-label,.desktop-marginalia>.measure,.desktop-marginalia>.micro,.desktop-marginalia>.ephemera,.desktop-marginalia>.stamp-ring{display:none}
+ .desktop-marginalia{display:block;position:absolute;left:0;right:0;top:180px;bottom:0;min-height:6000px;overflow:hidden;pointer-events:none;z-index:0}
+ .collage-tile{position:absolute;left:0;right:0;height:560px;pointer-events:none}
+ .ct1{top:0}.ct2{top:560px}.ct3{top:1120px}.ct4{top:1680px}.ct5{top:2240px}.ct6{top:2800px}.ct7{top:3360px}.ct8{top:3920px}.ct9{top:4480px}.ct10{top:5040px}
+ .folio{position:absolute;object-fit:contain;mix-blend-mode:multiply;filter:sepia(.15) saturate(.72);opacity:.24}
+ .folio.a{left:4px;top:0;width:155px;transform:rotate(-6deg)}.folio.b{left:90px;top:150px;width:125px;transform:rotate(7deg);opacity:.18}
+ .folio.c{left:8px;top:310px;width:145px;transform:rotate(3deg);opacity:.21}.folio.d{right:2px;top:15px;width:165px;transform:rotate(6deg)}
+ .folio.e{right:92px;top:170px;width:120px;transform:rotate(-8deg);opacity:.18}.folio.f{right:5px;top:330px;width:145px;transform:rotate(-3deg);opacity:.21}
+ .tile-note{position:absolute;width:118px;padding:9px 10px;background:rgba(255,250,240,.62);border:1px solid rgba(128,106,77,.22);color:var(--brown);font:9px/1.55 Georgia,serif;opacity:.52;box-shadow:2px 2px 0 rgba(64,54,39,.04)}
+ .tile-note.l{left:55px;top:255px;transform:rotate(-4deg)}.tile-note.r{right:48px;top:260px;transform:rotate(5deg)}
+ .tile-stamp{position:absolute;width:68px;height:68px;border:1.5px solid var(--brown);border-radius:50%;display:grid;place-items:center;text-align:center;color:var(--brown);font:700 7px/1.4 system-ui,sans-serif;letter-spacing:.09em;opacity:.18}
+ .tile-stamp.l{left:15px;top:215px;transform:rotate(13deg)}.tile-stamp.r{right:12px;top:220px;transform:rotate(-11deg)}
+ .tile-rule{position:absolute;width:95px;height:1px;background:var(--brown);opacity:.18}.tile-rule.l{left:28px;top:500px;transform:rotate(-2deg)}.tile-rule.r{right:30px;top:505px;transform:rotate(3deg)}
+ .tile-rule:after{content:"0  1  2  3  4 cm";position:absolute;top:4px;font:7px monospace;color:var(--brown);white-space:pre}
+ body.dark .folio{mix-blend-mode:screen;opacity:.095;filter:sepia(.2) grayscale(.08)}body.dark .tile-note{background:rgba(41,47,40,.52);opacity:.35}body.dark .tile-stamp,body.dark .tile-rule{opacity:.12}
+}
+@media(min-width:1500px){
+ .folio.a{left:30px;width:185px}.folio.b{left:155px;width:145px}.folio.c{left:38px;width:170px}
+ .folio.d{right:28px;width:190px}.folio.e{right:155px;width:145px}.folio.f{right:38px;width:170px}
+ .tile-note.l{left:120px}.tile-note.r{right:115px}.tile-stamp.l{left:45px}.tile-stamp.r{right:42px}
+}
+</style></head><body><aside class="desktop-marginalia" aria-hidden="true">
 <img class="margin-art left-one" src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Cedar%20Bird%20%28Audubon%29.jpg" alt="">
 <div class="margin-caption ml">ornithological study · field plate</div>
 <img class="margin-art left-two" src="https://commons.wikimedia.org/wiki/Special:Redirect/file/John%20James%20Audubon%20Brown-Headed%20Nuthatch%20print.jpg" alt="">
@@ -112,7 +135,97 @@ body.dark header{background:#292f28;color:#dce7d8}body.dark .bird,body.dark .car
 <div class="ephemera e2">plumage noted<br>along riparian edge<br>— field memorandum</div>
 <div class="ephemera e3">WING  ___ mm<br>TAIL  ___ mm<br>BILL  ___ mm<br>TARSUS ___ mm</div>
 <div class="ephemera e4">⌁ ❧</div>
-<div class="stamp-ring sr1">FIELD<br>SPECIMEN<br>ARCHIVE</div><div class="stamp-ring sr2">TEMPE<br>FIELD<br>LOG</div></aside>
+<div class="stamp-ring sr1">FIELD<br>SPECIMEN<br>ARCHIVE</div><div class="stamp-ring sr2">TEMPE<br>FIELD<br>LOG</div><div class="collage-tile ct1">
+<img class="folio a" src="https://historical-bird-plates.wells.ee/havell/art/plate-211.jpg" alt="">
+<img class="folio b" src="https://historical-bird-plates.wells.ee/havell/art/plate-318.jpg" alt="">
+<img class="folio c" src="https://historical-bird-plates.wells.ee/havell/art/plate-386.jpg" alt="">
+<img class="folio d" src="https://historical-bird-plates.wells.ee/havell/art/plate-201.jpg" alt="">
+<img class="folio e" src="https://historical-bird-plates.wells.ee/havell/art/plate-286.jpg" alt="">
+<img class="folio f" src="https://historical-bird-plates.wells.ee/havell/art/plate-356.jpg" alt="">
+<div class="tile-note l">FIELD NOTE 01<br>date _______<br>habitat _______<br>behavior _______<br>plumage _______</div>
+<div class="tile-note r">SPECIMEN STUDY<br>wing ___ mm<br>tail ___ mm<br>bill ___ mm<br>tarsus ___ mm</div>
+<div class="tile-stamp l">FIELD<br>ARCHIVE<br>1901</div><div class="tile-stamp r">ORNITH.<br>PLATE<br>1</div><span class="tile-rule l"></span><span class="tile-rule r"></span></div><div class="collage-tile ct2">
+<img class="folio a" src="https://historical-bird-plates.wells.ee/havell/art/plate-221.jpg" alt="">
+<img class="folio b" src="https://historical-bird-plates.wells.ee/havell/art/plate-320.jpg" alt="">
+<img class="folio c" src="https://historical-bird-plates.wells.ee/havell/art/plate-392.jpg" alt="">
+<img class="folio d" src="https://historical-bird-plates.wells.ee/havell/art/plate-206.jpg" alt="">
+<img class="folio e" src="https://historical-bird-plates.wells.ee/havell/art/plate-288.jpg" alt="">
+<img class="folio f" src="https://historical-bird-plates.wells.ee/havell/art/plate-359.jpg" alt="">
+<div class="tile-note l">FIELD NOTE 02<br>date _______<br>habitat _______<br>behavior _______<br>plumage _______</div>
+<div class="tile-note r">SPECIMEN STUDY<br>wing ___ mm<br>tail ___ mm<br>bill ___ mm<br>tarsus ___ mm</div>
+<div class="tile-stamp l">FIELD<br>ARCHIVE<br>1902</div><div class="tile-stamp r">ORNITH.<br>PLATE<br>2</div><span class="tile-rule l"></span><span class="tile-rule r"></span></div><div class="collage-tile ct3">
+<img class="folio a" src="https://historical-bird-plates.wells.ee/havell/art/plate-227.jpg" alt="">
+<img class="folio b" src="https://historical-bird-plates.wells.ee/havell/art/plate-327.jpg" alt="">
+<img class="folio c" src="https://historical-bird-plates.wells.ee/havell/art/plate-395.jpg" alt="">
+<img class="folio d" src="https://historical-bird-plates.wells.ee/havell/art/plate-210.jpg" alt="">
+<img class="folio e" src="https://historical-bird-plates.wells.ee/havell/art/plate-301.jpg" alt="">
+<img class="folio f" src="https://historical-bird-plates.wells.ee/havell/art/plate-374.jpg" alt="">
+<div class="tile-note l">FIELD NOTE 03<br>date _______<br>habitat _______<br>behavior _______<br>plumage _______</div>
+<div class="tile-note r">SPECIMEN STUDY<br>wing ___ mm<br>tail ___ mm<br>bill ___ mm<br>tarsus ___ mm</div>
+<div class="tile-stamp l">FIELD<br>ARCHIVE<br>1903</div><div class="tile-stamp r">ORNITH.<br>PLATE<br>3</div><span class="tile-rule l"></span><span class="tile-rule r"></span></div><div class="collage-tile ct4">
+<img class="folio a" src="https://historical-bird-plates.wells.ee/havell/art/plate-228.jpg" alt="">
+<img class="folio b" src="https://historical-bird-plates.wells.ee/havell/art/plate-328.jpg" alt="">
+<img class="folio c" src="https://historical-bird-plates.wells.ee/havell/art/plate-400.jpg" alt="">
+<img class="folio d" src="https://historical-bird-plates.wells.ee/havell/art/plate-212.jpg" alt="">
+<img class="folio e" src="https://historical-bird-plates.wells.ee/havell/art/plate-305.jpg" alt="">
+<img class="folio f" src="https://historical-bird-plates.wells.ee/havell/art/plate-379.jpg" alt="">
+<div class="tile-note l">FIELD NOTE 04<br>date _______<br>habitat _______<br>behavior _______<br>plumage _______</div>
+<div class="tile-note r">SPECIMEN STUDY<br>wing ___ mm<br>tail ___ mm<br>bill ___ mm<br>tarsus ___ mm</div>
+<div class="tile-stamp l">FIELD<br>ARCHIVE<br>1904</div><div class="tile-stamp r">ORNITH.<br>PLATE<br>4</div><span class="tile-rule l"></span><span class="tile-rule r"></span></div><div class="collage-tile ct5">
+<img class="folio a" src="https://historical-bird-plates.wells.ee/havell/art/plate-239.jpg" alt="">
+<img class="folio b" src="https://historical-bird-plates.wells.ee/havell/art/plate-331.jpg" alt="">
+<img class="folio c" src="https://historical-bird-plates.wells.ee/havell/art/plate-403.jpg" alt="">
+<img class="folio d" src="https://historical-bird-plates.wells.ee/havell/art/plate-225.jpg" alt="">
+<img class="folio e" src="https://historical-bird-plates.wells.ee/havell/art/plate-311.jpg" alt="">
+<img class="folio f" src="https://historical-bird-plates.wells.ee/havell/art/plate-385.jpg" alt="">
+<div class="tile-note l">FIELD NOTE 05<br>date _______<br>habitat _______<br>behavior _______<br>plumage _______</div>
+<div class="tile-note r">SPECIMEN STUDY<br>wing ___ mm<br>tail ___ mm<br>bill ___ mm<br>tarsus ___ mm</div>
+<div class="tile-stamp l">FIELD<br>ARCHIVE<br>1905</div><div class="tile-stamp r">ORNITH.<br>PLATE<br>5</div><span class="tile-rule l"></span><span class="tile-rule r"></span></div><div class="collage-tile ct6">
+<img class="folio a" src="https://historical-bird-plates.wells.ee/havell/art/plate-242.jpg" alt="">
+<img class="folio b" src="https://historical-bird-plates.wells.ee/havell/art/plate-333.jpg" alt="">
+<img class="folio c" src="https://historical-bird-plates.wells.ee/havell/art/plate-404.jpg" alt="">
+<img class="folio d" src="https://historical-bird-plates.wells.ee/havell/art/plate-231.jpg" alt="">
+<img class="folio e" src="https://historical-bird-plates.wells.ee/havell/art/plate-313.jpg" alt="">
+<img class="folio f" src="https://historical-bird-plates.wells.ee/havell/art/plate-391.jpg" alt="">
+<div class="tile-note l">FIELD NOTE 06<br>date _______<br>habitat _______<br>behavior _______<br>plumage _______</div>
+<div class="tile-note r">SPECIMEN STUDY<br>wing ___ mm<br>tail ___ mm<br>bill ___ mm<br>tarsus ___ mm</div>
+<div class="tile-stamp l">FIELD<br>ARCHIVE<br>1906</div><div class="tile-stamp r">ORNITH.<br>PLATE<br>6</div><span class="tile-rule l"></span><span class="tile-rule r"></span></div><div class="collage-tile ct7">
+<img class="folio a" src="https://historical-bird-plates.wells.ee/havell/art/plate-248.jpg" alt="">
+<img class="folio b" src="https://historical-bird-plates.wells.ee/havell/art/plate-337.jpg" alt="">
+<img class="folio c" src="https://historical-bird-plates.wells.ee/havell/art/plate-409.jpg" alt="">
+<img class="folio d" src="https://historical-bird-plates.wells.ee/havell/art/plate-236.jpg" alt="">
+<img class="folio e" src="https://historical-bird-plates.wells.ee/havell/art/plate-322.jpg" alt="">
+<img class="folio f" src="https://historical-bird-plates.wells.ee/havell/art/plate-393.jpg" alt="">
+<div class="tile-note l">FIELD NOTE 07<br>date _______<br>habitat _______<br>behavior _______<br>plumage _______</div>
+<div class="tile-note r">SPECIMEN STUDY<br>wing ___ mm<br>tail ___ mm<br>bill ___ mm<br>tarsus ___ mm</div>
+<div class="tile-stamp l">FIELD<br>ARCHIVE<br>1907</div><div class="tile-stamp r">ORNITH.<br>PLATE<br>7</div><span class="tile-rule l"></span><span class="tile-rule r"></span></div><div class="collage-tile ct8">
+<img class="folio a" src="https://historical-bird-plates.wells.ee/havell/art/plate-251.jpg" alt="">
+<img class="folio b" src="https://historical-bird-plates.wells.ee/havell/art/plate-342.jpg" alt="">
+<img class="folio c" src="https://historical-bird-plates.wells.ee/havell/art/plate-424.jpg" alt="">
+<img class="folio d" src="https://historical-bird-plates.wells.ee/havell/art/plate-243.jpg" alt="">
+<img class="folio e" src="https://historical-bird-plates.wells.ee/havell/art/plate-325.jpg" alt="">
+<img class="folio f" src="https://historical-bird-plates.wells.ee/havell/art/plate-399.jpg" alt="">
+<div class="tile-note l">FIELD NOTE 08<br>date _______<br>habitat _______<br>behavior _______<br>plumage _______</div>
+<div class="tile-note r">SPECIMEN STUDY<br>wing ___ mm<br>tail ___ mm<br>bill ___ mm<br>tarsus ___ mm</div>
+<div class="tile-stamp l">FIELD<br>ARCHIVE<br>1908</div><div class="tile-stamp r">ORNITH.<br>PLATE<br>8</div><span class="tile-rule l"></span><span class="tile-rule r"></span></div><div class="collage-tile ct9">
+<img class="folio a" src="https://historical-bird-plates.wells.ee/havell/art/plate-252.jpg" alt="">
+<img class="folio b" src="https://historical-bird-plates.wells.ee/havell/art/plate-345.jpg" alt="">
+<img class="folio c" src="https://historical-bird-plates.wells.ee/havell/art/plate-425.jpg" alt="">
+<img class="folio d" src="https://historical-bird-plates.wells.ee/havell/art/plate-250.jpg" alt="">
+<img class="folio e" src="https://historical-bird-plates.wells.ee/havell/art/plate-326.jpg" alt="">
+<img class="folio f" src="https://historical-bird-plates.wells.ee/havell/art/plate-400.jpg" alt="">
+<div class="tile-note l">FIELD NOTE 09<br>date _______<br>habitat _______<br>behavior _______<br>plumage _______</div>
+<div class="tile-note r">SPECIMEN STUDY<br>wing ___ mm<br>tail ___ mm<br>bill ___ mm<br>tarsus ___ mm</div>
+<div class="tile-stamp l">FIELD<br>ARCHIVE<br>1909</div><div class="tile-stamp r">ORNITH.<br>PLATE<br>9</div><span class="tile-rule l"></span><span class="tile-rule r"></span></div><div class="collage-tile ct10">
+<img class="folio a" src="https://historical-bird-plates.wells.ee/havell/art/plate-254.jpg" alt="">
+<img class="folio b" src="https://historical-bird-plates.wells.ee/havell/art/plate-348.jpg" alt="">
+<img class="folio c" src="https://historical-bird-plates.wells.ee/havell/art/plate-434.jpg" alt="">
+<img class="folio d" src="https://historical-bird-plates.wells.ee/havell/art/plate-257.jpg" alt="">
+<img class="folio e" src="https://historical-bird-plates.wells.ee/havell/art/plate-343.jpg" alt="">
+<img class="folio f" src="https://historical-bird-plates.wells.ee/havell/art/plate-433.jpg" alt="">
+<div class="tile-note l">FIELD NOTE 10<br>date _______<br>habitat _______<br>behavior _______<br>plumage _______</div>
+<div class="tile-note r">SPECIMEN STUDY<br>wing ___ mm<br>tail ___ mm<br>bill ___ mm<br>tarsus ___ mm</div>
+<div class="tile-stamp l">FIELD<br>ARCHIVE<br>1910</div><div class="tile-stamp r">ORNITH.<br>PLATE<br>10</div><span class="tile-rule l"></span><span class="tile-rule r"></span></div></aside>
 <header><div class="wrap"><h1>Salt River · Tempe Town Lake</h1><div class="sub">Personal bird checklist & photo log</div><div class="stats">✓ 7 species collected · Started November 8, 2026</div><span class="field-stamp">FIELD LOG 001</span><span class="decor-sprig" aria-hidden="true">⌇❧</span><button id="themeToggle" class="theme-toggle" type="button" aria-label="Switch color theme">☾ Dark journal</button><img class="journal-bird" src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Heron%20Illustration.jpg" alt="" aria-hidden="true"></div></header>
 <main class="wrap"><div class="tabs"><button class="tab active" data-tab="check">Checklist</button><button class="tab" data-tab="collection">My Collection · 7</button><button class="tab" data-tab="ideal">Ideal Sightings</button></div>
 <section id="check" class="panel active"><input id="search" class="search" placeholder="Search birds…"><div id="list"></div></section>

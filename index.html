@@ -38,6 +38,30 @@ body.dark header{background:#292f28;color:#dce7d8}body.dark .bird,body.dark .car
  .margin-art.left-one{left:45px;width:190px}.margin-art.left-two{left:70px;width:155px}
  .margin-art.right-one{right:35px;width:205px}.margin-art.right-two{right:75px;width:160px}
  .margin-caption.ml{left:65px}.margin-caption.mr{right:65px}
+}
+@media(min-width:1280px){
+ .desktop-marginalia{overflow:hidden}
+ .scrap{position:absolute;pointer-events:none;mix-blend-mode:multiply;filter:sepia(.16) saturate(.72);opacity:.22}
+ .scrap.paper{background:rgba(255,250,240,.72);border:1px solid rgba(128,106,77,.25);box-shadow:2px 3px 0 rgba(64,54,39,.05)}
+ .scrap.s1{left:2px;top:610px;width:155px;transform:rotate(7deg)}
+ .scrap.s2{right:0;top:720px;width:175px;transform:rotate(-6deg)}
+ .scrap.s3{left:10px;top:1230px;width:165px;transform:rotate(-4deg)}
+ .scrap.s4{right:10px;top:1420px;width:155px;transform:rotate(6deg)}
+ .scrap.s5{left:5px;top:1760px;width:170px;transform:rotate(3deg)}
+ .scrap.s6{right:0;top:1900px;width:180px;transform:rotate(-5deg)}
+ .scrap.s7{left:15px;top:2240px;width:145px;transform:rotate(-7deg)}
+ .scrap.s8{right:15px;top:2380px;width:150px;transform:rotate(5deg)}
+ .scrap-label{position:absolute;color:var(--brown);font:italic 10px Georgia,serif;opacity:.46;letter-spacing:.04em}
+ .sl1{left:22px;top:790px;transform:rotate(6deg)}.sl2{right:22px;top:1120px;transform:rotate(-4deg)}
+ .sl3{left:25px;top:2110px;transform:rotate(-3deg)}.sl4{right:20px;top:2560px;transform:rotate(4deg)}
+ .measure{position:absolute;width:110px;height:1px;background:var(--brown);opacity:.25}
+ .measure:after{content:"0  1  2  3  4  5 cm";position:absolute;top:4px;left:0;font:8px monospace;color:var(--brown);white-space:pre}
+ .m1{left:24px;top:1080px;transform:rotate(-2deg)}.m2{right:30px;top:1700px;transform:rotate(4deg)}
+ body.dark .scrap{mix-blend-mode:screen;opacity:.11;filter:sepia(.2) grayscale(.1)}
+ body.dark .scrap-label,body.dark .measure{opacity:.28}
+}
+@media(min-width:1500px){
+ .scrap.s1,.scrap.s3,.scrap.s5{left:35px}.scrap.s2,.scrap.s4,.scrap.s6{right:35px}
 }</style></head><body><aside class="desktop-marginalia" aria-hidden="true">
 <img class="margin-art left-one" src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Cedar%20Bird%20%28Audubon%29.jpg" alt="">
 <div class="margin-caption ml">ornithological study · field plate</div>
@@ -45,7 +69,15 @@ body.dark header{background:#292f28;color:#dce7d8}body.dark .bird,body.dark .car
 <img class="margin-art right-one" src="https://commons.wikimedia.org/wiki/Special:Redirect/file/The%20Birds%20of%20America%20from%20Drawings%20Made%20in%20the%20United%20States%20MET%20DP247651.jpg" alt="">
 <div class="margin-caption mr">natural history · specimen notes</div>
 <img class="margin-art right-two" src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Illustration%20from%20Birds%20of%20America%20%281827%29%20by%20John%20James%20Audubon%2C%20digitally%20enhanced%20by%20rawpixel-com%20431.jpg" alt="">
-</aside>
+<img class="scrap s1" src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Bird%27s%20Nests%20and%20Eggs.jpg" alt="">
+<img class="scrap s2" src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Herbarium%20specimen.jpg" alt="">
+<img class="scrap s3" src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Wilson%2C%20Alexander%2C%201766-1813%20-%20American%20ornithology%20-%20Plate%201.jpg" alt="">
+<img class="scrap s4" src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Ornithology%20tab%2030.jpg" alt="">
+<img class="scrap s5" src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Selby%27s%20Illustrations%20of%20British%20ornithology%20Volume%201%20Land%20birds%20Plate%20II.jpg" alt="">
+<img class="scrap s6" src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Rose%20herbarium%20specimen.jpg" alt="">
+<img class="scrap s7" src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Selby%27s%20Illustrations%20of%20British%20ornithology%20Volume%201%20Land%20birds%20Plate%20XL.jpg" alt="">
+<div class="scrap s8 paper" style="height:150px;padding:14px;font:10px/1.65 Georgia,serif;color:var(--brown)">FIELD OBSERVATION<br>Specimen _______<br>Date ____________<br>Weather _________<br><br>habitat · behavior · plumage<br>________________<br>________________</div>
+<div class="scrap-label sl1">nests & eggs · comparative plate</div><div class="scrap-label sl2">pressed botanical specimen · field collection</div><div class="scrap-label sl3">American ornithology · plate study</div><div class="scrap-label sl4">observation card · archive copy</div><span class="measure m1"></span><span class="measure m2"></span></aside>
 <header><div class="wrap"><h1>Salt River · Tempe Town Lake</h1><div class="sub">Personal bird checklist & photo log</div><div class="stats">✓ 7 species collected · Started November 8, 2026</div><span class="field-stamp">FIELD LOG 001</span><span class="decor-sprig" aria-hidden="true">⌇❧</span><button id="themeToggle" class="theme-toggle" type="button" aria-label="Switch color theme">☾ Dark journal</button><img class="journal-bird" src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Heron%20Illustration.jpg" alt="" aria-hidden="true"></div></header>
 <main class="wrap"><div class="tabs"><button class="tab active" data-tab="check">Checklist</button><button class="tab" data-tab="collection">My Collection · 7</button><button class="tab" data-tab="ideal">Ideal Sightings</button></div>
 <section id="check" class="panel active"><input id="search" class="search" placeholder="Search birds…"><div id="list"></div></section>
